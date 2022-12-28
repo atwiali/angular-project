@@ -1,0 +1,96 @@
+<section class="home">
+  <div class="content">
+      <h3>Biggest Clothe Sale
+          <br><br> <span>Up To 50% Off</span>
+      </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, totam sed maxime animi facilis!</p>
+      <button id="shopnow" routerLink="/product">Shop Now</button>
+  </div>
+  <div class="img">
+      <img src="../../assets/images/b2.png" alt="">
+  </div>
+</section>
+<div class="banner">
+  <div class="content">
+    
+      <h1>Get Up To 50% Off</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, animi?</p>
+      <div id="bannerbtn" routerLink="/product"><button>SHOP NOW</button></div>
+  </div>
+</div>
+<div class="container-fluid mt-5 p-5 ">
+	<div class="row">
+		<div class="col-6 col-md-3 col-lg-4 p-2" *ngFor="let p of nike">
+			<div class="card">
+				<img class="card-img-top"  src="../../assets/images/{{p.image}}" alt="Card image">
+				<div class="card-body">
+				  <h4 class="card-title p-2">{{p.title}}</h4>
+				  
+				  <div class="star">
+					<i class="fas fa-star checked"></i>
+					<i class="fas fa-star checked"></i>
+					<i class="fas fa-star checked"></i>
+					<i class="fas fa-star checked"></i>
+					<i class="fas fa-star "></i>
+					<h5>{{p.price}} </h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add to cart</button>
+				</div>
+			
+				</div>
+			</div>
+			<br>
+		</div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thank you </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Added to cart
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <a href="" routerLink="/product" id="viewmore">View More</a>
+</div>
+<!-- product -->
+<div class="container m-5" style="margin-top: 100px;">
+  <hr>
+</div>
+<div class="container m-5">
+  <h3 style="font-weight: bold;">PRODUCT.</h3>
+  <p cl>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero eius ipsam incidunt illum totam nostrum quidem sit cumque fugit. Accusamus rem praesentium labore tempore ullam porro quaerat fugiat cum ipsum, sint perferendis voluptate ad, quod reiciendis officia! In voluptate quae expedita sunt eum placeat alias soluta. Rem commodi, impedit error doloribus ratione at provident beatae, aut doloremque sunt possimus voluptas recusandae nam aliquid eos quia minus harum repellat quae eveniet laborum dolore esse voluptate sed. Voluptate ullam dolor sapiente neque labore hic nam odio qui consectetur porro minima nesciunt suscipit vitae obcaecati reiciendis itaque ipsum unde, debitis nemo soluta!</p>
+
+  <hr>
+</div>
+
+<!-- offer -->
+  <div class="container m-5" id="offer">
+      <div class="row">
+          <div class="col-md-4 py-3 py-md-0">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h5>Free Shipping</h5>
+              <p>On order over $100</p>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+              <i class="fa-solid fa-truck"></i>
+              <h5>Fast Delivery</h5>
+              <p>World wide</p>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <h5>Big Choice</h5>
+              <p>Of product</p>
+          </div>
+      </div>
+  </div>
